@@ -25,7 +25,7 @@
         margin: 210px auto;
         width: 450px;
         height: 300px;
-        opacity: 0.8;
+        opacity: var(--opacity);
         background-color: var(--main-background-color);
         color: var(--main-font-color);
     }

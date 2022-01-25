@@ -18,7 +18,7 @@
     #bottom {
         position: relative;
         height: 50px;
-        opacity: 0.8;
+        opacity: var(--opacity);
         background-color: var(--main-background-color);
     }
 

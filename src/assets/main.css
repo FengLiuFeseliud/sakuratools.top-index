@@ -9,8 +9,12 @@
     clear: both;
 }
 
-/* 主题颜色 */
+/* 主题 */
 :root{
+    /* 主题背景图片 */
+    --background-image: url('https://img.sakuratools.top/bg.png@0x0x0x80');
+    /* 页面加载时的缓冲颜色 */
+    --background-color: black;
     /* 界面颜色 */
     --main-background-color: #313131;
     /* 副界面颜色 */
@@ -20,12 +24,14 @@
     /* 副字体颜色 */
     --two-font-color: pink;
     /* 链接字体颜色 */
-    --hover-font-color: orange
+    --hover-font-color: orange;
+    /* 主题透明 */
+    --opacity: 0.8;
 }
 
 body {
-    background-image: url('https://img.sakuratools.top/bg.png@0x0x0x80');
-    background-color: black;
+    background-image: var(--background-image);
+    background-color: var(--background-color);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100%;

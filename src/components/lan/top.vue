@@ -13,7 +13,7 @@
         data(){
             return {
                 tags: [
-                    {url:"/api", text:"本站api文档"},
+                    {url:"/api/md", text:"本站api文档"},
                 ],
                 
                 http_tags: [
@@ -43,7 +43,7 @@
         z-index: 999;
         margin: 0 auto;
         background-color: var(--main-background-color);
-        opacity: 0.8;
+        opacity: var(--opacity);
     }
 
     /* 导航栏标签 */

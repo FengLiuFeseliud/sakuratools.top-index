@@ -12,13 +12,13 @@
 
 <style scoped>
     .top-title {
-        color: white;
+        color: var(--main-font-color);
         font-size: 32px;
         display: inline-block;
         height: 50px;
     }
 
     .title-2 {
-        color: pink;
+        color: var(--two-font-color);
     }
 </style>

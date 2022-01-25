@@ -16,7 +16,7 @@
         min-height: 800px;
         margin: 100px auto;
         margin-bottom: 50px;
-        opacity: 0.8;
+        opacity: var(--opacity);
         color: var(--main-font-color);
         font-size: 18px;
         line-height: 32px;
