@@ -1,7 +1,7 @@
 <template>
     <div id="top">
         <TopTitle></TopTitle>
-        <Alist :tags="tags"></Alist>
+        <Alist :tags="tags" :http_tags="http_tags"></Alist>
     </div>
 </template>
 
@@ -14,6 +14,9 @@
             return {
                 tags: [
                     {url:"/api", text:"本站api文档"},
+                ],
+                
+                http_tags: [
                     {url:"https://skln.xyz", text:"skln"},
                     {url:"https://img.sakuratools.top", text:"img"},
                     {url:"https://github.com/FengLiuFeseliud", text:"github"},

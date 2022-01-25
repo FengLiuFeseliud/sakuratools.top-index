@@ -3,21 +3,34 @@
         <router-link v-for="itme in tags" :key="itme" :to="itme.url">
             {{itme.text}}
         </router-link>
+        <a  v-for="itme in http_tags" :key="itme" :href="itme.url">
+            {{itme.text}}
+        </a>
     </div>
 </template>
 
 <script>
     export default {
-        props: [
-            "tags"
-        ]
+        props:{
+            tags:{
+                type: Array,
+                default(){
+                    return []
+                }
+            },
+            http_tags:{
+                type: Array,
+                default(){
+                    return []
+                }
+            },
+        }
     }
 </script>
 
 <style scoped>
     a {
         display: inline-block;
-        transition: background-color 0.3s;
     }
 
     a:hover {

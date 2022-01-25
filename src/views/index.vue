@@ -1,5 +1,5 @@
 <template>
-    <div id="index-main" class="clearfix">
+    <Main>
         <Slist>
             <p>{{timeStr}}</p>
             <p>{{wthrcdn}}</p>
@@ -15,21 +15,24 @@
                 <a href="https://github.com/FengLiuFeseliud/sakuratools.top-index">站点前端 - github</a>
             </span>
         </TextBox>
-        <Slist class="last">
+        <Slist style="margin-right: 0px;" class="last">
             <h4>碧蓝动态</h4>
             <a target="_blank" v-for="item in blhx" :key="item" :href="item.url">{{set_text(item.text)}}<br></a>
         </Slist>
-    </div>
+    </Main>
 </template>
 
 <script>
     import axios from "axios"
+    import Main from "../components/svue/main.vue"
     import Slist from "../components/lan/slist.vue"
     import TextBox  from "../components/svue/text_box.vue"
+
     export default {
         components: {
             Slist,
-            TextBox
+            TextBox,
+            Main
         },
 
         data(){
@@ -64,22 +67,7 @@
     }
 </script>
 
-<style scoped>
-    /* 页面盒子 */
-    #index-main {
-        min-height: 800px;
-        margin: 100px auto;
-        margin-bottom: 50px;
-        opacity: 0.8;
-        color: var(--main-font-color);
-        font-size: 18px;
-        line-height: 32px;
-    }
-
-    #index-main > .last {
-        float: left;
-        margin-right: 0px;
-    }
+<style>
 
     p /deep/ {
         padding: 0px 20px;

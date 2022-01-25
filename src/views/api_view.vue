@@ -1,5 +1,5 @@
 <template>
-    <div id="index-main" class="clearfix">
+    <Main>
         <Slist>
             <Alist :tags="tags"></Alist>
         </Slist>
@@ -8,11 +8,12 @@
                 
             </slot>
         </TextBox>
-    </div>
+    </Main>
 </template>
 
 <script>
     import Slist from "../components/lan/slist.vue"
+    import Main from "../components/svue/main.vue"
     import TextBox  from "../components/svue/text_box.vue"
     import Alist from "../components/svue/alist.vue"
 
@@ -32,34 +33,19 @@
         components:{
             Slist,
             TextBox,
-            Alist
+            Alist,
+            Main
         }
     }
 </script>
 
 <style>
-    /* 页面盒子 */
-    #index-main {
-        min-height: 800px;
-        margin: 100px auto;
-        margin-bottom: 50px;
-        opacity: 0.8;
-        color: var(--main-font-color);
-        font-size: 18px;
-        line-height: 32px;
-    }
-
-    #index-main > .last {
-        float: left;
-        margin-right: 0px;
-    }
 
     #index-main > .slist > #nav > a {
         display: block;
         height: 50px;
         line-height: 50px;
         padding-left: 30px;
-        transition: background-color 0.3s;
     }
 
     #index-main > .slist > #nav > a.router-link-exact-active {

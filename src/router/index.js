@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Index from "../views/index"
+import Error from "../views/error"
 import Api from "../views/api/md"
 import ApiImg from "../views/api/img"
 import ApiPixiv from "../views/api/pixiv"
@@ -11,6 +12,11 @@ const routes = [
     {
         path: "/",
         component: Index
+    },
+
+    {
+        path: "/error",
+        component: Error
     },
 
     {
