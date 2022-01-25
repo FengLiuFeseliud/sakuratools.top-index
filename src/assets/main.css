@@ -1,0 +1,43 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* 主题颜色 */
+:root{
+    /* 界面颜色 */
+    --main-background-color: #313131;
+    /* 副界面颜色 */
+    --two-background-color: white;
+    /* 主字体颜色 */
+    --main-font-color: white;
+    /* 副字体颜色 */
+    --two-font-color: pink;
+    /* 链接字体颜色 */
+    --hover-font-color: orange
+}
+
+body {
+    background-image: url('https://img.sakuratools.top/bg.png@0x0x0x80');
+    background-color: black;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* 统一链接样式 */
+a {
+    color: var(--two-font-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover{
+    color: var(--hover-font-color);
+}
