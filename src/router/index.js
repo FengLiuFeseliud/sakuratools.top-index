@@ -55,16 +55,15 @@ const routes = [
 const router = createRouter({
     history: createWebHistory(process.env.BASH_URL),
     routes: routes
-
 });
 
 router.beforeEach((to, from, next) => {
     // 如果未匹配到路由
     if (to.matched.length === 0) {
         next('/error') 
-    } else {
-        next()
     }
+
+    next()
 })
 
 export default router

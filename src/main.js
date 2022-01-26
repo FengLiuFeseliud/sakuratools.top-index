@@ -1,15 +1,12 @@
 import { createApp } from 'vue'
 import App from './App'
 import router from "./router"
-import { createPinia } from "pinia"
 import "./assets/main.css"
 
-const pinia = createPinia()
 const app =  createApp(App)
 // app.config.devtools = true
 
 app.use(router)
-app.use(pinia)
 
 app.mount('#App');
 console.log([

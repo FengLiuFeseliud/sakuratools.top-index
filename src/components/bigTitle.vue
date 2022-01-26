@@ -15,10 +15,10 @@
 
     export default {
 
-        beforeCreate: function() {
-            let body = document.getElementsByTagName("body")[0]
-            body.setAttribute("style","background-attachment: scroll;");
-        },
+        // beforeCreate: function() {
+        //     let body = document.getElementsByTagName("body")[0]
+        //     body.setAttribute("style","background-attachment: scroll;");
+        // },
 
         data(){
             return {
@@ -37,6 +37,7 @@
             Alist,
             STop
         }
+        
     }
 </script>
 
