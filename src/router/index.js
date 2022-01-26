@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Index from "../views/index"
+import BigIndex from "../views/bigIndex"
 import Error from "../views/error"
 import Api from "../views/api/md"
 import ApiImg from "../views/api/img"
@@ -11,6 +12,11 @@ import ApiBilibili from "../views/api/bilibili"
 const routes = [
     {
         path: "/",
+        component: BigIndex
+    },
+
+    {
+        path: "/index",
         component: Index
     },
 

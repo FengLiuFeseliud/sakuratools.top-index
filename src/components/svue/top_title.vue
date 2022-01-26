@@ -12,9 +12,12 @@
 
 <style scoped>
     .top-title {
+        float: left;
+        padding-left: 15px;
+        line-height: 50px;
+        font-weight: 700;
         color: var(--main-font-color);
         font-size: 32px;
-        display: inline-block;
         height: 50px;
     }
 

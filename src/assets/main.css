@@ -29,12 +29,17 @@
     --opacity: 0.8;
 }
 
+div {
+    white-space: nowrap;
+}
+
 body {
     background-image: var(--background-image);
     background-color: var(--background-color);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100%;
+    max-width:100%;
 }
 
 /* 统一链接样式 */

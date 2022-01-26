@@ -13,6 +13,7 @@
         data(){
             return {
                 tags: [
+                    {url:"/index", text:"Home"},
                     {url:"/api/md", text:"本站api文档"},
                 ],
                 
@@ -46,12 +47,15 @@
         opacity: var(--opacity);
     }
 
+    #top > #nav {
+        float: right;
+    }
+
     /* 导航栏标签 */
-    #top a  {
-        float: left;
+    #top > #nav a  {
         line-height: 50px;
         font-weight: 700;
-        padding: 0px 10px;
+        padding: 0px 15px;
     }
 
 </style>

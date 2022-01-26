@@ -1,12 +1,17 @@
 <template>
+    <Top></Top>
     <div id="index-main" class="clearfix">
         <slot></slot>
     </div>
 </template>
 
 <script>
+    import Top from "../lan/top.vue"
+
     export default {
-        
+        components: {
+            Top
+        }
     }
 </script>
 

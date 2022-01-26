@@ -1,13 +1,11 @@
 <template>
     <div>
-        <Top></Top>
         <router-view></router-view>
         <Bottom></Bottom>
     </div>
 </template>
 
 <script>
-    import Top from "./components/lan/top"
     import Bottom from "./components/lan/bottom"
 
     export default {
@@ -17,8 +15,7 @@
             }
         },
         components: {
-            Top,
-            Bottom,
+            Bottom
         }
     }
 </script>
