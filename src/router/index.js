@@ -7,6 +7,7 @@ import ApiImg from "../views/api/img"
 import ApiPixiv from "../views/api/pixiv"
 import ApiSkln from "../views/api/skln"
 import ApiBilibili from "../views/api/bilibili"
+import ApiInfo from "../views/api/info"
 import Blhx from "../views/dynamic/blhx"
 
 
@@ -49,6 +50,11 @@ const routes = [
     {
         path: "/api/bilibili",
         component: ApiBilibili
+    },
+
+    {
+        path: "/api/info",
+        component: ApiInfo
     },
 
     {

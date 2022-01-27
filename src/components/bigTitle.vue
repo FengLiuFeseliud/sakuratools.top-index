@@ -2,7 +2,7 @@
     <div id="big-title">
         <STop></STop>
         <div id="title">
-            <h1>Sakura<span>tools.top</span></h1>
+            <h1>Sakura<span>Tools.top</span></h1>
         </div>
         <Alist :tags="tags" :http_tags="http_tags"></Alist>
     </div>

@@ -22,6 +22,7 @@
             return {
                 tags: [
                     {text:"API错误码", url:"/api/md"},
+                    {text:"动态信息", url:"/api/info"},
                     {text:"图床", url:"/api/img"},
                     {text:"短链接", url:"/api/skln"},
                     {text:"直链获取 - pixiv", url:"/api/pixiv"},

@@ -1,7 +1,8 @@
 <template>
     <div>
         <ApiView>
-            <h2>1.0 pixiv</h2>
+            <span>
+                <h2>1.0 pixiv</h2>
                 <h3>抓取于 https://www.vilipix.com</h3>
                 <h3>数据0点更新均晚一天稳定榜单, 不包括r18</h3>
                 <h3>一次返回日周月三榜混合数据, 不重复抓取, 过了就没了</h3>
@@ -45,6 +46,7 @@
                 <p>msg: api 信息 错误时可以返回错误信息</p>
                 <p>data -> date: 从哪几天随机</p>
                 <p>data -> list: 随机图片列表</p>
+            </span>
         </ApiView>
     </div>
 </template>

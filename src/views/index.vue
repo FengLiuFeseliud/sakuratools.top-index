@@ -52,7 +52,7 @@
                     this.wthrcdn = res.data.data.wthrcdn;
                 })
             
-            axios.get("https://api.sakuratools.top/info/blhx?offset=0&page=10&short=1")
+            axios.get("https://api.sakuratools.top/info/blhx?offset=0&count=10&short=1")
                 .then(res => {
                     this.blhx = res.data.data;
                 })

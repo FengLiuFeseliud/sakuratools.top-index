@@ -19,7 +19,7 @@
         },
 
         mounted() {
-            axios.get("https://api.sakuratools.top/info/blhx?offset=0&page=10")
+            axios.get("https://api.sakuratools.top/info/blhx?offset=0&count=10")
                 .then(res => {
                     this.dynamic_list = res.data.data;
                 })
