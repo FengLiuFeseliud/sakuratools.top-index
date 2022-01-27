@@ -10,6 +10,7 @@
                 <h3>本站不定时更新各种 api 各站 api 处理 小工具</h3>
                 <a href="https://frp.104300.xyz/">本站使用 FRP 进行反向代理</a>
                 <h3>服务器每周一 三点进行重启 服务会短暂不可用</h3>
+                <h3>前端第一个版本 v0.1.0更新了!</h3>
                 <h3>本站完全开源 如下</h3>
                 <a href="https://github.com/FengLiuFeseliud/api.sakurtools.top-api">站点后端 - github</a><br>
                 <a href="https://github.com/FengLiuFeseliud/sakuratools.top-index">站点前端 - github</a>
