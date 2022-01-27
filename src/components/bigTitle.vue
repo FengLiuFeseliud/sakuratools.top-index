@@ -57,6 +57,7 @@
         text-align: center;
         color: var(--two-font-color);
         font-size: 40px;
+        text-shadow: 8px 8px 5px var(--box-shadow);
     } 
 
     #big-title > #title span{
@@ -75,15 +76,17 @@
 
     #big-title > #nav a {
         display: inline-block;
-        margin: 10px;
+        margin: 15px;
         width: 180px;
         height: 100%;
         border-radius: 10px;
         background-color: var(--two-background-color);
+        box-shadow: 8px 8px 5px var(--box-shadow);
+        transition: all 0.3s;
     }
 
-    #big-title > #link a:hover {
-        background-color: var(--main-background-color);
+    #big-title > #nav a:hover {
+        transform: scale(1.2);
         text-decoration: underline;
     }
 

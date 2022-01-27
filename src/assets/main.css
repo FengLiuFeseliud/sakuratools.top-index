@@ -19,6 +19,8 @@
     --main-background-color: #313131;
     /* 副界面颜色 */
     --two-background-color: white;
+    /* 界面阴影颜色 */
+    --box-shadow: rgb(39, 38, 38);
     /* 主字体颜色 */
     --main-font-color: white;
     /* 副字体颜色 */

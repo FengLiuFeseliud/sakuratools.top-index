@@ -19,6 +19,7 @@
         width: 760px;
         margin-right: 59px;
         background-color: var(--main-background-color);
+        box-shadow: 5px 5px 10px 5px var(--box-shadow);
     }
 
     /* 页面盒子H2 */

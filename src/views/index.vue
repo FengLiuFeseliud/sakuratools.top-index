@@ -1,8 +1,8 @@
 <template>
     <Main>
         <Slist>
-            <p>{{timeStr}}</p>
-            <p>{{wthrcdn}}</p>
+            <p class="Slist-p" style="padding-top: 20px;">{{timeStr}}</p>
+            <p class="Slist-p">{{wthrcdn}}</p>
             <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=300 height=450 src="//music.163.com/outchain/player?type=0&id=7239327750&auto=1&height=430"></iframe>
         </Slist>
         <TextBox>
@@ -16,7 +16,7 @@
             </span>
         </TextBox>
         <Slist style="margin-right: 0px;" class="last">
-            <h4>碧蓝动态</h4>
+            <h4 style="padding-top: 20px;">碧蓝动态</h4>
             <a target="_blank" v-for="item in blhx" :key="item" :href="item.url">{{set_text(item.text)}}<br></a>
         </Slist>
     </Main>
@@ -69,7 +69,7 @@
 
 <style>
 
-    p /deep/ {
+    .Slist-p {
         padding: 0px 20px;
         font-size: 18px;
         line-height: 25px;

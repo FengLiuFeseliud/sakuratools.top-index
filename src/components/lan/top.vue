@@ -45,6 +45,7 @@
         margin: 0 auto;
         background-color: var(--main-background-color);
         opacity: var(--opacity);
+        box-shadow: 5px 5px 10px 5px var(--box-shadow);
     }
 
     #top > #nav {

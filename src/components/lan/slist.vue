@@ -18,5 +18,6 @@
         min-height: 800px;
         width: 300px;
         background-color: var(--main-background-color);
+        box-shadow: 5px 5px 10px 5px var(--box-shadow);
     }
 </style>

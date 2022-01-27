@@ -20,6 +20,7 @@
         height: 50px;
         opacity: var(--opacity);
         background-color: var(--main-background-color);
+        box-shadow: 5px 5px 10px 5px var(--box-shadow);
     }
 
     /* 底边栏 copyright 样式 */
