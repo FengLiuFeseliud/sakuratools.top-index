@@ -19,7 +19,7 @@
         <Slist style="margin-right: 0px;" class="last">
             <h4 style="padding-top: 20px;">碧蓝动态</h4>
             <a target="_blank" v-for="item in blhx" :key="item" :href="item.url">{{set_text(item.text)}}<br></a>
-            <a href="/dynamic/blhx" id="link-blhx">查看详细...</a>
+            <a href="/dynamic/blhx" target="_self" id="link-blhx">查看详细...</a>
         </Slist>
     </Main>
 </template>
