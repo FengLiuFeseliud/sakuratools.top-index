@@ -19,6 +19,7 @@
         <Slist style="margin-right: 0px;" class="last">
             <h4 style="padding-top: 20px;">碧蓝动态</h4>
             <a target="_blank" v-for="item in blhx" :key="item" :href="item.url">{{set_text(item.text)}}<br></a>
+            <a href="/dynamic/blhx" id="link-blhx">查看详细...</a>
         </Slist>
     </Main>
 </template>
@@ -93,5 +94,23 @@
     .last > a:hover {
         color: var(--two-font-color);
         text-decoration: underline;
+    }
+
+    .last > #link-blhx {
+        display: block;
+        width: 100px;
+        height: 30px;
+        background-color: var(--two-background-color);
+        color: var(--two-font-color);
+        margin: 10px auto;
+        border-radius: 5px;
+        transition: all 0.3s;
+        box-shadow: 3px 3px 10px 3px var(--box-shadow);
+    }
+
+    .last > #link-blhx:hover {
+        color: var(--hover-font-color);
+        transform: scale(1.1);
+        box-shadow: 5px 5px 10px 5px var(--box-shadow);
     }
 </style>

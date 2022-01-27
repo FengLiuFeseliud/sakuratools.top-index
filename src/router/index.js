@@ -7,6 +7,7 @@ import ApiImg from "../views/api/img"
 import ApiPixiv from "../views/api/pixiv"
 import ApiSkln from "../views/api/skln"
 import ApiBilibili from "../views/api/bilibili"
+import Blhx from "../views/dynamic/blhx"
 
 
 const routes = [
@@ -18,6 +19,11 @@ const routes = [
     {
         path: "/index",
         component: Index
+    },
+
+    {
+        path: "/dynamic/blhx",
+        component: Blhx
     },
 
     {
