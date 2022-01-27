@@ -54,7 +54,7 @@ a:hover{
 
 ```bash
 git clone https://github.com/FengLiuFeseliud/sakuratools.top-index.git
-cd ./sakuratools.top-index && npm run serve 
+cd ./sakuratools.top-index && npm install && npm run serve 
 # 访问本地 8080 端口
 ```
 
