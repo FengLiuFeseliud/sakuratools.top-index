@@ -1,0 +1,45 @@
+
+# 组件目录 备忘
+
+
+# components
+
+# 整个屏幕的大标题
+src/components/bigTitle.vue
+
+# components/lan
+
+# 导航栏
+src/components/lan/top.vue
+# 简约的导航栏
+src/components/lan/sTop.vue
+# 底边栏
+src/components/lan/bottom.vue
+# 侧边栏 1
+src/components/lan/bottom.vue
+
+# components/svue
+
+# 链接表 父组件可传 路由/网址 样式可以在父组件重新设置
+src/components/svue/alist.vue
+# 基础的页面盒子 宽 100%
+src/components/svue/main.vue
+# 文本盒子 带一些文本标签的样式 可以直接在里面用标签写文章
+src/components/svue/text_box.vue
+# 导航栏标题
+src/components/svue/top_title.vue
+
+
+# 页面
+# src/views
+
+# 以下目录全部为 API 文档
+src/views/api
+# API 文档基础页面
+src/views/api_view.vue
+# 大主页 https://sakuratools.top/
+src/views/bigIndex.vue
+# 404 403 页面
+src/views/error.vue
+# Home 页面
+src/views/index.vue
