@@ -2,6 +2,7 @@ import { createApp } from 'vue'
 import App from './App'
 import router from "./router"
 import "./assets/main.css"
+import "./assets/icon/style.css"
 
 const app =  createApp(App)
 // app.config.devtools = true

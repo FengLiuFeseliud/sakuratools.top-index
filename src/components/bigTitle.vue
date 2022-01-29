@@ -23,12 +23,12 @@
         data(){
             return {
                 tags: [
-                    {text: "Home", url:"/index"},
-                    {url:"/api/md", text:"本站api文档"},
+                    {text: " Home", url:"/index"},
+                    {url:"/api/md", text:" 本站api文档"},
                 ],
 
                 http_tags: [
-                    {url:"https://github.com/FengLiuFeseliud", text:"github"},
+                    {url:"https://github.com/FengLiuFeseliud", text:"github"},
                 ]
             }
         },
@@ -80,6 +80,7 @@
         width: 180px;
         height: 100%;
         border-radius: 10px;
+        font-family: "icomoon";
         background-color: var(--two-background-color);
         box-shadow: 8px 8px 5px var(--box-shadow);
         transition: all 0.3s;
@@ -89,5 +90,4 @@
         transform: scale(1.2);
         text-decoration: underline;
     }
-
 </style>
