@@ -35,7 +35,6 @@
             Slist,
             TextBox,
             Main,
-            BigInputField
         },
 
         data(){
