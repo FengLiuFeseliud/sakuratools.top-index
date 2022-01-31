@@ -3,6 +3,7 @@
         <Slist>
             <p class="Slist-p" style="padding-top: 20px;">{{timeStr}}</p>
             <p class="Slist-p">{{wthrcdn}}</p>
+            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=300 height=450 src="//music.163.com/outchain/player?type=0&id=7239327750&auto=1&height=430"></iframe>
         </Slist>
         <TextBox>
             <span>
@@ -19,6 +20,7 @@
             <h4 style="padding-top: 20px;">碧蓝动态</h4>
             <a target="_blank" v-for="item in blhx" :key="item" :href="item.url">{{set_text(item.text)}}<br></a>
             <router-link to="/dynamic/blhx" id="link-blhx">查看详细...</router-link>
+            <BigInputField @add="myadd"><BigInputField>
         </Slist>
     </Main>
 </template>
@@ -28,12 +30,14 @@
     import Main from "../components/svue/main.vue"
     import Slist from "../components/lan/slist.vue"
     import TextBox  from "../components/svue/text_box.vue"
+    import BigInputField from "../components/tools/bigInputField.vue"
 
     export default {
         components: {
             Slist,
             TextBox,
-            Main
+            Main,
+            BigInputField
         },
 
         data(){
@@ -63,6 +67,10 @@
                     text = text.split("\n", 3).slice(1, 3).join(" ");
                 }
                 return text.slice(0, 18) + "...";
+            },
+
+            myadd(data){
+                console.log(data);
             }
         }
     }

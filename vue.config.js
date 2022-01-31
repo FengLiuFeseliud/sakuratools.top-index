@@ -1,3 +1,6 @@
 module.exports  = {
-    outputDir: "build"
+    outputDir: "build",
+    devServer: {
+        disableHostCheck: true,
+    }
 }
