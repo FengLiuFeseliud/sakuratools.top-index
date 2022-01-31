@@ -20,7 +20,6 @@
             <h4 style="padding-top: 20px;">碧蓝动态</h4>
             <a target="_blank" v-for="item in blhx" :key="item" :href="item.url">{{set_text(item.text)}}<br></a>
             <router-link to="/dynamic/blhx" id="link-blhx">查看详细...</router-link>
-            <BigInputField @add="myadd"><BigInputField>
         </Slist>
     </Main>
 </template>
@@ -30,7 +29,6 @@
     import Main from "../components/svue/main.vue"
     import Slist from "../components/lan/slist.vue"
     import TextBox  from "../components/svue/text_box.vue"
-    import BigInputField from "../components/tools/bigInputField.vue"
 
     export default {
         components: {
@@ -67,10 +65,6 @@
                     text = text.split("\n", 3).slice(1, 3).join(" ");
                 }
                 return text.slice(0, 18) + "...";
-            },
-
-            myadd(data){
-                console.log(data);
             }
         }
     }
