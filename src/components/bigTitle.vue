@@ -80,7 +80,6 @@
         width: 180px;
         height: 100%;
         border-radius: 10px;
-        font-family: "icomoon";
         background-color: var(--two-background-color);
         box-shadow: 8px 8px 5px var(--box-shadow);
         transition: all 0.3s;

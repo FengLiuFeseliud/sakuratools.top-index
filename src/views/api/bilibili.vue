@@ -58,7 +58,7 @@
 </template>
 
 <script>
-    import ApiView from "../api_view.vue"
+    import ApiView from "../template/api_view.vue"
 
     export default {
         components: {

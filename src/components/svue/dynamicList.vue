@@ -14,19 +14,60 @@
 </template>
 
 <script>
+    import axios from "axios"
 
     export default {
 
-        props:{
-            dynamic_list:{
-                type: Array,
-                default(){
-                    return []
-                }
+        data(){
+            return{
+                dynamic_list: [],
+                offset: 0,
+                max_count: 0,
+                link_in:false
             }
         },
 
+        props:{
+            api:{
+                type: String
+            }
+        },
+
+        mounted(){
+            this.getList()
+            window.addEventListener("scroll", this.scroll)
+        },
+
+        unmounted(){
+            window.removeEventListener("scroll", this.scroll)
+        },
+
+        updated(){
+            this.link_in = false
+        },
+
         methods: {
+
+            getList(){
+                if(!this.link_in){
+                    if(this.max_count == 0 || this.offset <= this.max_count){
+                        this.link_in = true
+                        axios.get(this.api + "?offset="+this.offset+"&count=10")
+                            .then(res => {
+                                this.max_count = res.data.data.count
+                                this.dynamic_list = [...this.dynamic_list, ...res.data.data.list]
+                            })
+                        this.offset += 10
+                    }
+                }
+            },
+
+            scroll(){
+                let scroll = document.documentElement.scrollTop || document.body.scrollTop
+                if(scroll > document.body.clientHeight - window.screen.height * 2){
+                    this.getList()
+                }
+            },
             
             set_text(text){
                 let text_list = text.split("\n")

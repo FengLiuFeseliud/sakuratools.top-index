@@ -14,6 +14,7 @@
             return {
                 tags: [
                     {url:"/index", text:"Home"},
+                    {url:"/tools/md", text:"小工具"},
                     {url:"/dynamic/blhx", text:"动态"},
                     {url:"/api/md", text:"本站api文档"},
                 ],

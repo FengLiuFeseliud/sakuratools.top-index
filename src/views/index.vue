@@ -7,6 +7,8 @@
         </Slist>
         <TextBox>
             <span>
+                <h2>限时大红主题()</h2>
+                <router-link to="/tools/skln">skln 短链接图形界面开放了!</router-link>
                 <h3>本站不定时更新各种 api 各站 api 处理 小工具</h3>
                 <a href="https://frp.104300.xyz/">本站使用 FRP 进行反向代理</a>
                 <h3>服务器每周一 三点进行重启 服务会短暂不可用</h3>
@@ -34,7 +36,7 @@
         components: {
             Slist,
             TextBox,
-            Main,
+            Main
         },
 
         data(){
@@ -54,7 +56,7 @@
             
             axios.get("https://api.sakuratools.top/info/blhx?offset=0&count=10&short=1")
                 .then(res => {
-                    this.blhx = res.data.data;
+                    this.blhx = res.data.data.list;
                 })
         },
 

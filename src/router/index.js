@@ -8,6 +8,8 @@ import ApiPixiv from "../views/api/pixiv"
 import ApiSkln from "../views/api/skln"
 import ApiBilibili from "../views/api/bilibili"
 import ApiInfo from "../views/api/info"
+import Tools from "../views/tools/md"
+import ToolsSkln from "../views/tools/skln"
 import Blhx from "../views/dynamic/blhx"
 
 
@@ -58,6 +60,16 @@ const routes = [
     },
 
     {
+        path: "/tools/md",
+        component: Tools
+    },
+
+    {
+        path: "/tools/skln",
+        component: ToolsSkln
+    },
+
+    {
         path: "/error",
         component: Error
     },
@@ -70,6 +82,9 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
+    // 让页面回到顶部
+    document.documentElement.scrollTop = 0
+    
     // 如果未匹配到路由
     if (to.matched.length === 0) {
         next('/error') 
