@@ -42,12 +42,20 @@
 
     /* MarkDown css */
 
+    /* 变量高亮颜色 */
+    --variable-color: var(--main-font-color);
+    /* 属性高亮颜色 */
+    --property-color: var(--two-font-color);
+    /* 函数高亮颜色 */
+    --function-color: rgb(110, 184, 245);
+    /* 数字高亮颜色 */
+    --number-color: #e6db74;
     /* h1 标题下划线颜色 */
     --h1-border-color: var(--main-font-color);
     /* 引用边框线颜色 */
     --blockquote-border-color: var(--main-font-color);
     /* 代码块界面颜色 */
-    --markdown-pre-code-background-color: rgb(65, 65, 65);
+    --pre-code-background-color: rgb(65, 65, 65);
 }
 
 /* 统一链接样式 */

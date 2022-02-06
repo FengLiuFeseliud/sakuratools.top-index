@@ -25,7 +25,7 @@
 
         mounted() {
             axios.get(this.url).then(res => {
-                document.getElementById(this.name).innerHTML = marked.parse(
+                document.getElementById(this.name).innerHTML += marked.parse(
                     res.data,
                     {
                         gfm: true,
@@ -59,11 +59,37 @@
     }
 
     .markdown pre {
-        background-color: var(--markdown-pre-code-background-color);
+        background-color: var(--pre-code-background-color);
     }
 
     .markdown blockquote {
         border-left: 5px solid var(--blockquote-border-color);
         padding-left: 1em;
     }
+
+    .token.url-link {
+        text-decoration: underline;
+    }
+
+    .token.variable {
+        color: var(--variable-color);
+    }
+
+    .token.property {
+        color: var(--property-color);
+    }
+
+    .token.function {
+        color: var(--function-color);
+    }
+
+    .token.number {
+        color: var(--number-color);
+    }
+
+    span.inline-color-wrapper {
+        width: 1em;
+        height: 1em;
+    }
+    
 </style>
