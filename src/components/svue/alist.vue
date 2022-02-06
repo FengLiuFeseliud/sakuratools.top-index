@@ -1,6 +1,6 @@
 <template>
     <div id="nav">
-        <router-link v-for="itme in tags" :key="itme" :to="itme.url">
+        <router-link v-for="itme in tags" :key="itme" :to="itme.url" @click="setTitle(itme.text)">
             {{itme.text}}
         </router-link>
         <a  v-for="itme in http_tags" :key="itme" :href="itme.url">
@@ -26,6 +26,12 @@
             },
             
         },
+
+        methods:{
+            setTitle(title){
+                document.title = title
+            }
+        }
     }
 </script>
 

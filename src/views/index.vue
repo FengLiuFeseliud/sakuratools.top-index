@@ -7,10 +7,10 @@
         </Slist>
         <TextBox>
             <span>
-                <h2>限时大红主题()</h2>
                 <router-link to="/tools/skln">skln 短链接图形界面开放了!</router-link>
                 <h3>本站不定时更新各种 api 各站 api 处理 小工具</h3>
-                <a href="https://frp.104300.xyz/">本站使用 FRP 进行反向代理</a>
+                <h3>2022/2/2 21:26 原 frp 服务挂了更换 frp 为 freefrp.net</h3>
+                <a href="https://freefrp.net/">本站使用 FRP 进行反向代理</a>
                 <h3>服务器每周一 三点进行重启 服务会短暂不可用</h3>
                 <h3>前端第一个版本 v0.1.0更新了!</h3>
                 <h3>本站完全开源 如下</h3>
@@ -75,7 +75,7 @@
 
     .Slist-p {
         padding: 0px 20px;
-        font-size: 18px;
+        font-size: 17px;
         line-height: 25px;
     }
 

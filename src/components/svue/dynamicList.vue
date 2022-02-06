@@ -1,15 +1,17 @@
 <template>
     <div id="dynamic-list">
-        <a class="dynamic" v-for="item in dynamic_list" :key="item" :href="item.url">
-            <div class="user">
-                <img :src="item.user_head">
-                <span>{{ item.user }}</span>
-            </div>
-            <div class="text" v-html="set_text(item.text)"></div>
+        <div class="dynamic" v-for="item in dynamic_list" :key="item" :href="item.url">
+            <a :href="item.url">
+                <div class="user">
+                    <img :src="item.user_head">
+                    <span>{{ item.user }}</span>
+                </div>
+                <div class="text" v-html="set_text(item.text)"></div>
+            </a>
             <div class="img-list clearfix">
                 <img v-for="img in set_img_list(item.img)" :key="img" :src="img">
             </div>
-        </a>
+        </div>
     </div>
 </template>
 
@@ -23,7 +25,8 @@
                 dynamic_list: [],
                 offset: 0,
                 max_count: 0,
-                link_in:false
+                link_in:false,
+                oldClientHeight: 0
             }
         },
 
@@ -64,7 +67,7 @@
 
             scroll(){
                 let scroll = document.documentElement.scrollTop || document.body.scrollTop
-                if(scroll > document.body.clientHeight - window.screen.height * 2){
+                if(scroll > document.body.clientHeight - window.innerWidth){
                     this.getList()
                 }
             },
@@ -105,49 +108,51 @@
         margin-right: 59px;
     }
 
-    #dynamic-list > .dynamic{
+    .dynamic{
         position: relative;
         display: block;
         width: 100%;
         margin-bottom: 35px;
         padding: 20px;
-        color: var(--main-font-color);
         background-color: var(--main-background-color);
         box-shadow: 5px 5px 10px 5px var(--box-shadow);
         border-radius: 20px;
         transition: all 0.3s;
     }
 
-    #dynamic-list > .dynamic:hover{
-        color: var(--two-font-color);
+    .dynamic:hover{
         transform: scale(1.02);
         box-shadow: 7px 7px 10px 7px var(--box-shadow);
     }
 
-    #dynamic-list > .dynamic > .user > span {
+    .user > span {
         position: absolute;
         left: 80px;
         width: 100%;
         height: 50px;
         line-height: 50px;
+        color: var(--main-font-color);
     }
 
-    #dynamic-list > .dynamic > .user > img {
+    .user > img {
         width: 50px;
         height: 50px;
         border-radius: 25px;
         box-shadow: 1px 1px 5px 2px var(--box-shadow);
     }
 
-    #dynamic-list > .dynamic > .text{
+    .text{
         font-size: 16px;
         line-height: 25px;
-        word-break: break-word;
-        word-wrap: break-word;
-        white-space: normal;
+        color: var(--main-font-color);
+        transition: all 0.3s;
     }
 
-    #dynamic-list > .dynamic > .img-list > img{
+    .text:hover{
+        color: var(--two-font-color);
+    }
+
+    .img-list > img{
         float: left;
         width: 360px;
         margin-left: 20px;

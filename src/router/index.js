@@ -16,12 +16,14 @@ import Blhx from "../views/dynamic/blhx"
 const routes = [
     {
         path: "/",
-        component: BigIndex
+        component: BigIndex,
+        title:"SakuraTools"
     },
 
     {
         path: "/index",
-        component: Index
+        component: Index,
+        title:"SakuraTools"
     },
 
     {

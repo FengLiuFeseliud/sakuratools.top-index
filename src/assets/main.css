@@ -2,6 +2,9 @@
     margin: 0px;
     padding: 0px;
     font-family: "icomoon";
+    word-break: break-word;
+    word-wrap: break-word;
+    white-space: normal;
 }
 
 .clearfix:after{
@@ -17,7 +20,7 @@
     /* 页面加载时的缓冲颜色 */
     --background-color: black;
     /* 界面颜色 */
-    --main-background-color: #ff4e4e;
+    --main-background-color: #313131;
     /* 副界面颜色 */
     --two-background-color: white;
     /* 界面阴影颜色 */
@@ -25,11 +28,9 @@
     /* 主字体颜色 */
     --main-font-color: white;
     /* 副字体颜色 */
-    --two-font-color: orange;
+    --two-font-color: pink;
     /* 链接字体颜色 */
-    --hover-font-color: pink;
-    /* 输入框颜色 */
-    --input-color: black;
+    --hover-font-color: orange;
     /* 主题透明 */
     --opacity: 0.8;
 }
