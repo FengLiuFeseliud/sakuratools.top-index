@@ -1,6 +1,7 @@
 <template>
     <BigTitle>
-        <div id="big-index">
+        <Markdown name="README-md" url="https://md.sakuratools.top/README.md"></Markdown>
+        <div id="big-index" class="clearfix">
             <h1>还没想好放什么, 空空如也的...</h1>
             <h1>看看别人家的点歌台?</h1>
             <a href="https://live.bilibili.com/1360383">->茶叶_</a>
@@ -10,18 +11,29 @@
 
 <script>
     import BigTitle from "../components/bigTitle.vue"
+    import Markdown from "../components/tools/markdown.vue"
 
     export default {
         components: {
-            BigTitle
+            BigTitle,
+            Markdown
         }
     }
 </script>
 
-<style scoped>
+<style>
+    #README-md {
+        width: 1000px;
+        color: var(--main-font-color);
+        background-color: var(--main-background-color);
+        border-radius: 20px;
+        opacity: var(--opacity);
+        margin-top: 30px;
+    }
+
     #big-index {
         width: 100%;
-        height: 500px;
+        min-height: 500px;
     }
 
     #big-index * {

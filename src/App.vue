@@ -19,7 +19,7 @@
         components: {
             Bottom,
             GoTop
-        }
+        },
     }
 </script>
 
