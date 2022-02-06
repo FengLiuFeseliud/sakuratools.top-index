@@ -47,11 +47,23 @@
     }
 
     .markdown > * {
-        /* display: block; */
         margin: 10px 0;
+    }
+
+    .markdown h1 {
+        border-bottom: 1px solid var(--h1-border-color);
     }
 
     .markdown p {
         margin: 0;
+    }
+
+    .markdown pre {
+        background-color: var(--markdown-pre-code-background-color);
+    }
+
+    .markdown blockquote {
+        border-left: 5px solid var(--blockquote-border-color);
+        padding-left: 1em;
     }
 </style>

@@ -35,6 +35,15 @@
     --opacity: 0.8;
     /* 输入内容颜色 */
     --input-color: black;
+
+    /* MarkDown css */
+
+    /* h1 标题下划线颜色 */
+    --h1-border-color: var(--main-font-color);
+    /* 引用边框线颜色 */
+    --blockquote-border-color: var(--main-font-color);
+    /* 代码块界面颜色 */
+    --markdown-pre-code-background-color: rgb(65, 65, 65);
 }
 
 div {

@@ -3,6 +3,8 @@
 ### 这是我个人网站 SakuraTools.top 的项目 基于 Vue 3
 
 > [网站: SakuraTools.top](https://sakuratools.top/)
+> [项目 github](https://github.com/FengLiuFeseliud/sakuratools.top-index)
+> [项目后端 github](https://github.com/FengLiuFeseliud/api.sakurtools.top-api)
 
 ### 组件目录记录在项目 instruction 文件
 
@@ -35,6 +37,17 @@
     --hover-font-color: orange;
     /* 主题透明 */
     --opacity: 0.8;
+    /* 输入内容颜色 */
+    --input-color: black;
+
+    /* MarkDown css */
+
+    /* h1 标题下划线颜色 */
+    --h1-border-color: var(--main-font-color);
+    /* 引用边框线颜色 */
+    --blockquote-border-color: var(--main-font-color);
+    /* 代码块界面颜色 */
+    --markdown-pre-code-background-color: rgb(65, 65, 65);
 }
 
 /* 统一链接样式 */
@@ -54,7 +67,7 @@ a:hover{
 
 ```bash
 git clone https://github.com/FengLiuFeseliud/sakuratools.top-index.git
-cd ./sakuratools.top-index && npm run serve 
+cd ./sakuratools.top-index && npm install && npm run serve 
 # 访问本地 8080 端口
 ```
 
